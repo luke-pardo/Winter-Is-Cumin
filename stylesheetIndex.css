@@ -1,0 +1,76 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700");
+
+body {
+    background: url(background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    position: relative;
+    padding-bottom: 60px;
+    /*Needed to make ScrollSpy function properly*/
+}
+
+.cover {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.coverflow {
+    width: 45%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .coverflow {
+        width: 95%;
+    }
+}
+
+.title {
+    margin: 40px;
+    text-align: center;
+    color: white;
+}
+
+.categories {
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .categories {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.mostpop,
+.toprev,
+.regions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5EBDE;
+    font-size: 30px;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mostpop,
+    .toprev,
+    .regions {
+        font-size: 20px;
+    }
+}
+
+.plus {
+    width: 35px;
+}
